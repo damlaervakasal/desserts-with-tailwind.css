@@ -4,10 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/src/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Josefin+Slab&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="bg-deym-brown">
+
+    <header class="bg-gradient-to-r  from-[#28000e] to-[#2a0606] table-fixed py-2 lg:py-4 uppercase">
+      <div class="container flex items-center justify-between space-x-8 lg:space-x-16">
+
+        <nav class="flex justify-between space-between flex-1 ">
+          <a href="cake.html" class="text-deym-bej"><i class="cursor-pointer fa-solid fa-bars fa-2xl"></i></a>
+
+          <a href="#" class=" cursor-pointer text-deym-bej text-4xl lg:text-6xl font-gloria">DEYMIL</a>
+          <span class="felx justify-between">
+            <i href="#" class="cursor-pointer fab fa-twitter text-deym-twitter fa-2xl"></i>
+            <i href="#" class="cursor-pointer fa-brands fa-instagram text-deym-instagram fa-2xl"></i>
+          </span>
+        </nav> 
+      </div>
+      <img  class="mt-3" src="./assets/1.png" alt="pic">
+
+      
+        <a href="#page-2" class="flex justify-center -mt-3"><i class="cursor-pointer text-deym-bej opacity-25 hover:opacity-100 fa-regular fa-angle-down fa-7x "></i></a>
+    </header>
+
+    <section class="mt-72 mb-72 slider-wrapper" id="page-2">
+
+      <div class="container mt-10">
+
+        <div class="flex flex-row">
+
+          <div class="basis-1/12 slides-container" id="slides-container">
+            <button class="mt-32 slide-arrow" id="slide-arrow-prev"><i class="fa-solid fa-angle-left fa-3x"></i></button>
+          </div>
+
+          <div class="basis-2/12 hover:opacity-20 slide">
+            <img class="rounded-full  border border-deym-brown" src="./assets/brownies-1.png" alt="">
+          </div>
+
+          <div class="basis-2/12 hover:opacity-20 slide">
+            <img class="rounded-full  border border-deym-brown" src="./assets/cheesecake-2.png" alt="">
+          </div>
+
+          <div class="basis-2/12 hover:opacity-20 slide">
+            <img class="rounded-full  border border-deym-brown" src="./assets/cookie.png" alt="">
+          </div>
+
+          <div class="basis-2/12 hover:opacity-20 slide">
+            <img class="rounded-full  border border-deym-brown" src="./assets/cupcake-2.png" alt="">
+          </div>
+          
+          <div class="basis-2/12 hover:opacity-20 slide">
+            <img class="mt-3 rounded-full  border border-deym-brown" src="./assets/donu-1.png" alt="">
+          </div>
+
+          <div class="basis-1/12">
+            <button class="mt-32 slide-arrow" id="slide-arrow-next"><i class="fa-solid fa-angle-right fa-3x"></i></button>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+    
+
+
+<script src="./script.js"></script>
 </body>
 </html>
