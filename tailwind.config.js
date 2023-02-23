@@ -42,6 +42,10 @@ module.exports = {
       margin: {
         "40px": "40px",
       },
+
+      zIndex: {
+        1: "1",
+      },
     },
   },
   plugins: [],

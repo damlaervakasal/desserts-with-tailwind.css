@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/src/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Josefin+Slab&display=swap" rel="stylesheet">
@@ -15,9 +16,26 @@
       <div class="container flex items-center justify-between space-x-8 lg:space-x-16">
 
         <nav class="flex justify-between space-between flex-1 ">
-          <a href="cake.html" class="text-deym-bej"><i class="cursor-pointer fa-solid fa-bars fa-2xl"></i></a>
+          
+          <a href="javascript:void(0);" class="text-deym-bej closebtn" onclick="openNav()"  >
+            <i class="cursor-pointer fa-solid fa-bars fa-2xl"></i>
+          </a>
 
-          <a href="#" class=" cursor-pointer text-deym-bej text-4xl lg:text-6xl font-gloria">DEYMIL</a>
+         <div id="mySidenav" class="sidenav space-y-6  -ml-44 h-full w-0 fixed z-[1] bg-deym-grey -top-0.5 opacity-30 overflow-x-hidden pt-0 transition-duration:200ms ">
+
+          <a href="javascript:void(0);" class="text-deym-brown  mt-3 closebtn"  onclick="closeNav()">
+            <i class="fa-light fa-arrow-left-to-line fa-6x mb-3"></i>
+          </a>
+          <a href="cake.html" class= "text-deym-instagram px-2 py-2 text-lg block ">Desserts</a>
+          <a href="#order " class="text-deym-instagram px-2 py-2 text-lg block">Order</a>
+          <a href="#about" class="text-deym-instagram px-2 py-2 text-lg block">About Us</a>
+          <a href="#contact" class="text-deym-instagram px-2 py-2 text-lg block transition-opacity: 200ms">Contact Us</a>
+        </div>
+
+        
+          
+
+          <a href="#" class=" active cursor-pointer text-deym-bej text-4xl lg:text-6xl font-gloria">DEYMIL</a>
           <span class="felx justify-between">
             <i href="#" class="cursor-pointer fab fa-twitter text-deym-twitter fa-2xl"></i>
             <i href="#" class="cursor-pointer fa-brands fa-instagram text-deym-instagram fa-2xl"></i>
@@ -30,42 +48,237 @@
         <a href="#page-2" class="flex justify-center -mt-3"><i class="cursor-pointer text-deym-bej opacity-25 hover:opacity-100 fa-regular fa-angle-down fa-7x "></i></a>
     </header>
 
-    <section class="mt-72 mb-72 slider-wrapper" id="page-2">
+    <section class="mt-72 mb-72 fix" id="page-2">
 
       <div class="container mt-10">
 
-        <div class="flex flex-row">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
-          <div class="basis-1/12 slides-container" id="slides-container">
-            <button class="mt-32 slide-arrow" id="slide-arrow-prev"><i class="fa-solid fa-angle-left fa-3x"></i></button>
+          <!-- Indicators -->
+           <ol class="mt-4 carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          </ol>
+        
+          <div class="carousel-inner ml-20">
+
+            <div class="carousel-item active">
+              <div class="grid grid-cols-5">
+                <div class="hover:opacity-20">
+                  <img class="rounded-full mb-10 border-deym-brown" src="./assets/brownies-1.png" alt="First slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full mt-6 border-deym-brown" src="./assets/cheesecake-2.png" alt="Second slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/cookie-2.png" alt="Third slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/cupcake-2.png" alt="Fourth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/donu-1.png" alt="Fifth slide">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="grid grid-cols-5">
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/pie-1.png" alt="Sixth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full mb-10 border-deym-brown" src="./assets/brownies-1.png" alt="Seventh slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full mt-6 border-deym-brown" src="./assets/cheesecake-2.png" alt="Eighth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/cookie-2.png" alt="Ninth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/cupcake-2.png" alt="Tenth slide">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="grid grid-cols-5">
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/donu-1.png" alt="Sixth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/pie-1.png" alt="Sixth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full mb-10 border-deym-brown" src="./assets/brownies-1.png" alt="Seventh slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full mt-6 border-deym-brown" src="./assets/cheesecake-2.png" alt="Eighth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/cookie-2.png" alt="Ninth slide">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="grid grid-cols-5">
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/cupcake-2.png" alt="Tenth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/donu-1.png" alt="Sixth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/pie-1.png" alt="Sixth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full mb-10 border-deym-brown" src="./assets/brownies-1.png" alt="Seventh slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full mt-6 border-deym-brown" src="./assets/cheesecake-2.png" alt="Eighth slide">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="grid grid-cols-5">
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/cookie-2.png" alt="Ninth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/cupcake-2.png" alt="Tenth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/donu-1.png" alt="Sixth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/pie-1.png" alt="Sixth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full mb-10 border-deym-brown" src="./assets/brownies-1.png" alt="Seventh slide">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="grid grid-cols-5">
+                <div class="hover:opacity-20">
+                  <img class="rounded-full mt-6 border-deym-brown" src="./assets/cheesecake-2.png" alt="Eighth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/cookie-2.png" alt="Ninth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/cupcake-2.png" alt="Tenth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/donu-1.png" alt="Sixth slide">
+                </div>
+                <div class="hover:opacity-20">
+                  <img class="rounded-full border-deym-brown" src="./assets/pie-1.png" alt="Sixth slide">
+                </div>
+              </div>
+            </div>
+
+            <div class="fix">  
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+           
+                  
+
+
+        <!-- ----------2 ---------------->
+        <!-- <div id="carouselExampleIndicators" class="carousel slide  grid grid-cols-5 h-36" data-ride="carousel">
+
+            <div class="carousel-inner ml-80">
+              <div class="carousel-item basis-1/4 active  ">
+                <img class="rounded-full   border-deym-brown" src="./assets/brownies-3.png" alt="First slide">
+              </div>
+              <div class="carousel-item basis-1/4 hover:opacity-20 ">
+                <img class="rounded-full   border-deym-brown" src="./assets/cheesecake-2.png" alt="Second slide">
+              </div>
+              <div class="carousel-item basis-1/4 hover:opacity-20 ">
+                <img class="rounded-full   border-deym-brown" src="./assets/cookie-2.png" alt="Third slide">
+              </div>
+              <div class="carousel-item  hover:opacity-20 ">
+                <img class="rounded-full   border-deym-brown" src="./assets/cupcake-2.png" alt="f slide">
+              </div>
+              <div class="carousel-item  hover:opacity-20 ">
+                <img class="rounded-full   border-deym-brown" src="./assets/donut-3.png" alt="fi slide">
+              </div>
+              <div class="carousel-item  hover:opacity-20">
+                <img class="rounded-full  border-deym-brown" src="./assets/pie-1.png" alt="si slide">
+              </div>
+            </div>
+
+
+          </div> 
+          <div class="fix">  
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>  -->
+
+          
+          <!-- ----------------------1-------------------- -->
+
+          <!-- <div class=" basis-1/12 slides-container" id="previous">
+            <button class="prev mt-32 slide-arrow" onclick="previousSlide()"><i class="fa-solid fa-angle-left fa-3x"></i></button>
           </div>
 
-          <div class="basis-2/12 hover:opacity-20 slide">
+          <div id="slide" class="basis-2/12 hover:opacity-20 slide ">
             <img class="rounded-full  border border-deym-brown" src="./assets/brownies-1.png" alt="">
           </div>
 
-          <div class="basis-2/12 hover:opacity-20 slide">
+          <div id="slide" class="basis-2/12 hover:opacity-20 slide">
             <img class="rounded-full  border border-deym-brown" src="./assets/cheesecake-2.png" alt="">
           </div>
 
-          <div class="basis-2/12 hover:opacity-20 slide">
+          <div id="slide" class="basis-2/12 hover:opacity-20 slide">
             <img class="rounded-full  border border-deym-brown" src="./assets/cookie.png" alt="">
           </div>
 
-          <div class="basis-2/12 hover:opacity-20 slide">
+          <div id="slide" class="basis-2/12 hover:opacity-20 slide">
             <img class="rounded-full  border border-deym-brown" src="./assets/cupcake-2.png" alt="">
           </div>
           
-          <div class="basis-2/12 hover:opacity-20 slide">
+          <div id="slide" class="basis-2/12 hover:opacity-20 slide">
             <img class="mt-3 rounded-full  border border-deym-brown" src="./assets/donu-1.png" alt="">
           </div>
 
-          <div class="basis-1/12">
-            <button class="mt-32 slide-arrow" id="slide-arrow-next"><i class="fa-solid fa-angle-right fa-3x"></i></button>
-          </div>
+          <div class="basis-1/12" id="next">
+            <button class="next mt-32 slide-arrow" onclick="nextSlide()"><i class="fa-solid fa-angle-right fa-3x"></i></button>
+          </div> -->
 
 
         </div>
+
+        <!-- <div class="text-center cursor-pointer h-4 w-4 bg-deym-grey inli">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div> -->
 
       </div>
 
@@ -75,5 +288,7 @@
 
 
 <script src="./script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
 </html>
