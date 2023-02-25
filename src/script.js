@@ -8,9 +8,9 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0px";
 }
 
-$(document).ready(function () {
-  $(".carousel").carousel();
-});
+// $(document).ready(function () {
+//   $(".carousel").carousel();
+// });
 
 // function nextSlide() {
 //   document.getElementById("next").nextSibling;

@@ -39,6 +39,11 @@ module.exports = {
         "280px": "280px",
       },
 
+      width: {
+        "800px": "800px",
+        "850px": "850px",
+      },
+
       margin: {
         "40px": "40px",
       },
