@@ -8,6 +8,32 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0px";
 }
 
+const swiperEl = new Swiper(".swiper2", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 0,
+    slideShadows: true,
+  },
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
+$(swiperEl).keydown(function (e) {
+  if (e.keyCode == 37) {
+    $("#next").click(); //on left arrow, click next (since your next is on the left)
+  } else if (e.keyCode == 39) {
+    $("#prev").click(); //on right arrow, click prev
+  }
+});
+
 // $(document).ready(function () {
 //   $(".carousel").carousel();
 // });
