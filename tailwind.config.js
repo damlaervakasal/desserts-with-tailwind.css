@@ -40,6 +40,8 @@ module.exports = {
       },
 
       width: {
+        "570px": "570px",
+        "600px": "600px",
         "800px": "800px",
         "850px": "850px",
       },
